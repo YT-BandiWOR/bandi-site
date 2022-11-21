@@ -1,12 +1,12 @@
 import React from 'react';
-import classes from "../App.module.scss.module.scss";
+import classes from "../App.module.scss";
 
 
 const Main = () => {
     return (
-        <div>
+        <main className={classes.Main}>
 
-        </div>
+        </main>
     );
 };
 

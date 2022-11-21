@@ -16,16 +16,53 @@ body {
 .App {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 .Header {
+  background: #656e5b;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px;
+  border-radius: 10px;
 
-}
+  a {
+    font-size: 2em;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: wheat;
+    text-decoration: none;
+  }
+  :hover {
+    text-decoration: wheat solid underline;
+  }
 
-.Main {
+  @media screen and (max-width: 900px) {
+    background: #656e5b;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
+    a {
+      font-size: 1em;
+    }
+  }
 }
 
 .Footer {
-
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  background: rgba(100, 100, 100, 0.5);
+  font: 2rem "Roboto Light";
 }
